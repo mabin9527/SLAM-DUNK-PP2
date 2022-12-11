@@ -18,6 +18,14 @@ a {
     text-decoration: none;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    overflow: hidden;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -92,6 +100,48 @@ nav {
     font-size: 10px;
     bottom: 10px;
 }
+
+
+.wrapper {
+    margin-top: 70px;
+    display: flex;
+    width: 90vw;
+    max-width: 1280px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.wrapper div {
+    position: relative;
+    width: 60px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    transition: .5s cubic-bezier(.05, .61, .41, .95);
+    overflow: hidden;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    transition: .5s cubic-bezier(.05, .61, .41, .95);
+}
+
+.active {
+    flex: 1;
+    margin: 0;
+    border-radius: 40px;
+}
+
+.active .shadow {
+    background: linear-gradient(to top, rgba(0, 0, 0, .35) 65%, transparent);
+}
+
 
 
 

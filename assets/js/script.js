@@ -1,4 +1,6 @@
-//set up function to change style of nav-bar when click
+/*set up function to change style of every list by adding className 
+ using for-loop when mouse is over and leaving icons*/
+ 
 function changeCurrent() {
     let navBar = document.querySelector('.nav-bar');
 
