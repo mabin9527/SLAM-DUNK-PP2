@@ -12,6 +12,21 @@ function changeCurrent() {
             this.className = '';
         })
     }
-    
 }
 changeCurrent();
+
+/* set up function */
+
+function setActive() {
+    let wrapper = document.querySelector('.wrapper');
+    
+    for (let i = 0; i < wrapper.children.length; i++) {
+        wrapper.children[i].addEventListener('click', function() {
+            for (let i = 0; i < wrapper.children.length; i++) {
+                wrapper.children[i].className = '';
+            }
+            this.className = 'active';
+        })
+    }
+}
+setActive();

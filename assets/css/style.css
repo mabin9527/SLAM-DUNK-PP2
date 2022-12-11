@@ -105,13 +105,11 @@ nav {
 .wrapper {
     margin-top: 70px;
     display: flex;
-    width: 90vw;
-    max-width: 1280px;
     height: 600px;
     overflow: hidden;
 }
 
-.wrapper div {
+.wrapper li {
     position: relative;
     width: 60px;
     margin: 10px;
@@ -123,24 +121,12 @@ nav {
     overflow: hidden;
 }
 
-.shadow {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100px;
-    transition: .5s cubic-bezier(.05, .61, .41, .95);
-}
-
 .active {
     flex: 1;
     margin: 0;
     border-radius: 40px;
 }
 
-.active .shadow {
-    background: linear-gradient(to top, rgba(0, 0, 0, .35) 65%, transparent);
-}
 
 
 
