@@ -35,18 +35,18 @@ nav {
     position: relative;
 }
 
-ul {
+.nav-bar {
     display: flex;
     margin-right: 10px;
 }
 
-nav ul li {
+.nav-bar li {
     position: relative;
     z-index: 1;
     width: 50px;
 }
 
-nav ul li a {
+.nav-bar li a {
     display: flex;
     justify-content: center;
     align-items: center;
