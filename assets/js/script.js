@@ -15,7 +15,9 @@ function changeCurrent() {
 }
 changeCurrent();
 
-/* set up function */
+/* set up function for slides. when mouse clicked smaller images that will be fully displayed by using two 
+for loops. The first one will remove class attribute and then second for add class attribute to the images
+that is clicked*/
 
 function setActive() {
     let wrapper = document.querySelector('.wrapper');
