@@ -8,7 +8,6 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     height: 100vh;
-    height: 3000px;
 }
 
 li {
@@ -159,6 +158,8 @@ nav {
     transition: top 0.3s ease;
 }
 
+/* set up .player-track area going up when the music is played */
+
 .player-track,
 .play {
     top: -90px;
@@ -262,6 +263,8 @@ nav {
     transition: .3s ease;
 }
 
+/* small circle in the middle of albums */
+
 .albums::before {
     content: "";
     width: 20px;
@@ -293,11 +296,19 @@ nav {
     opacity: 0;
 }
 
-.albums .play {
+/* images are displayed when play the music*/
+
+.albums img.play {
     opacity: 1;
     height: 100%;
-    animation: rotateAlbumCover 3s linear infinite;
 }
+
+/* related images-cover is rotated when play the music */
+
+.albums.play img.play {
+    animation: rotateAlbumCover 8s linear infinite;
+}
+ /* set up animation to albums */
 
 @keyframes rotateAlbumCover {
     0%{
@@ -344,8 +355,37 @@ nav {
 }
 
 .button:hover i {
-    color: #fff;
+    color: #f2f2f2;
 }
+
+footer {
+    width: 100%;
+    background-color: #404040;
+    margin-top: 10px;
+}
+ 
+footer ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+footer ul li:hover {
+    background-color: #737373;
+}
+
+footer ul li a {
+    color: #f2f2f2;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+
 
 
 
