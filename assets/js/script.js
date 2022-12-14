@@ -15,8 +15,8 @@ function changeCurrent() {
 }
 changeCurrent();
 
-/* set up function for slides. when mouse clicked smaller images that will be fully displayed by using two 
-for loops. The first one will remove class attribute and then second for add class attribute to the images
+/** set up function for slides. when mouse clicked smaller images that will be fully displayed by using two 
+* for loops. The first one will remove class attribute and then second for add class attribute to the images
 that is clicked */
 
 function setActive() {
@@ -37,7 +37,7 @@ setActive();
  * 
  */
 
-{
+
 const playList = [ {
     id: 'song-1',
     songName: '君が好きだと叫びたい',
@@ -76,7 +76,7 @@ let playTime = document.querySelector('.play-time');
 let hoverBar = document.querySelector('.hover-bar');
 let progressBar = document.querySelector('progress-bar');
 let albums = document.querySelector('.albums');
-let controlBtn = document.querySelector('.control');
+let playPause = document.querySelector('.play-pause');
 
 //The current played song
 
@@ -84,8 +84,40 @@ let currentSongIndex = 0;
 
 //Set up a variable to judge whether songs are played
 
-let isPlay = flase;
+let isPlay = true;
 
+//Initialize the function
 
-
+function init() {
+    render(playList[currentSongIndex]);
+    playPause.addEventListener('click', pause);
 }
+
+/** Build a function to fill in the songName and singer information to music box, which can 
+ *  be taken from the playList array.
+ */
+
+function render(song) {
+    songName.innerHTML = song.songName;
+    singer.innerHTML = song.singer;
+    audio.src = song.path;
+}
+
+//Add function to play and play-pause
+
+function pause() {
+    if(isPlay) {
+        playerTrack.classList.add('play');
+        playPause.children.classList = 'fa-solid fa-pause';
+        albums.classList.add('play');
+        audio.play();
+    } else {
+        playerTrack.classList.remove('play');
+        playPause.children.classList = 'fa-solid fa-play';
+        albums.classList.remove('play');
+        audio.pause();
+    }
+}
+
+init();
+

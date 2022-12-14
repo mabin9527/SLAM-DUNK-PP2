@@ -362,11 +362,11 @@ nav {
     color: #f2f2f2;
 }
 
-.audio {
+/* .audio {
     position: absolute;
     height: 40px;
-    z-index: -1;
-}
+    z-index: 3;
+} */
 
 footer {
     width: 100%;
