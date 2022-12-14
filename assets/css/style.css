@@ -132,7 +132,10 @@ nav {
     height: 250px;
     background-color: #a6a6a6;
     overflow: hidden;
-}
+} 
+
+/* learned from aienxiaohuihui on bilibili.com */
+
 .music-box {
     margin: 115px auto;
     width: 430px;
