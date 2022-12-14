@@ -63,6 +63,20 @@ const playList = [ {
     path: '../audio/song4.mp3'
 }
 ]
+// get the elements for javascript
+let audio = document.querySelector('.audio');
+let playerTrack = document.querySelector('.player-track');
+let songName = document.querySelector('.song-name');
+let singer = document.querySelector('.singer');
+let trackTime = document.querySelector('.track-time');
+let currentTime = document.querySelector('.current-time');
+let totalTime = document.querySelector('.total-time');
+let progressBox = document.querySelector('.progress-box');
+let playTime = document.querySelector('.play-time');
+let hoverBar = document.querySelector('.hover-bar');
+let progressBar = document.querySelector('progress-bar');
+let albums = document.querySelector('.albums');
+let controlBtn = document.querySelector('.control');
 
 
 
