@@ -62,7 +62,6 @@ const playList = [ {
     singer: '大黑摩季',
     path: '../audio/song4.mp3'
 }
-
 ]
 
 
