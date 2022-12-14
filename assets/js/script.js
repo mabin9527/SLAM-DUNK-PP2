@@ -78,6 +78,14 @@ let progressBar = document.querySelector('progress-bar');
 let albums = document.querySelector('.albums');
 let controlBtn = document.querySelector('.control');
 
+//The current played song
+
+let currentSongIndex = 0;
+
+//Set up a variable to judge whether songs are played
+
+let isPlay = flase;
+
 
 
 }
