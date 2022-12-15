@@ -42,25 +42,25 @@ const playList = [ {
     id: 'song-1',
     songName: '君が好きだと叫びたい',
     singer: 'BAAD',
-    path: '../audio/song1.mp3'
+    path: 'song1.mp3'
 },
 {
     id: 'song2',
     songName: '世界が終るまでは…',
     singer: 'WANDS',
-    path: '../audio/song2.mp3'
+    path: 'song2.mp3'
 },
 {
     id: 'song3',
     songName: 'ぜったいに 誰も',
     singer: 'ZYYG',
-    path: '../audio/song3.mp3'
+    path: 'song3.mp3'
 },
 {
     id: 'song4',
     songName: 'あなただけ見つめてる',
     singer: '大黑摩季',
-    path: '../audio/song4.mp3'
+    path: 'song4.mp3'
 }
 ]
 // get the elements for javascript
@@ -77,6 +77,8 @@ let hoverBar = document.querySelector('.hover-bar');
 let progressBar = document.querySelector('progress-bar');
 let albums = document.querySelector('.albums');
 let playPause = document.querySelector('.play-pause');
+let playPrev = document.querySelector('.play-prev');
+let playNext = document.querySelector('.play-next');
 
 //The current played song
 
@@ -100,7 +102,7 @@ function init() {
 function render(song) {
     songName.innerHTML = song.songName;
     singer.innerHTML = song.singer;
-    audio.src = song.path;
+    audio.src = 'assets/audio/' + song.path;
 }
 
 //Add function to play and play-pause
@@ -111,11 +113,17 @@ function pause() {
         playPause.children.classList = 'fa-solid fa-pause';
         albums.classList.add('play');
         audio.play();
+        document.querySelector('#open').style.display = 'block';
+        document.querySelector('#close').style.display = 'none';
+        isPlay = false;
     } else {
         playerTrack.classList.remove('play');
         playPause.children.classList = 'fa-solid fa-play';
         albums.classList.remove('play');
         audio.pause();
+        document.querySelector('#open').style.display = 'none';
+        document.querySelector('#close').style.display = 'block';
+        isPlay = true;
     }
 }
 
