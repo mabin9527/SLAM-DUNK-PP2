@@ -94,6 +94,7 @@ function init() {
     render(playList[currentSongIndex]);
     playPause.addEventListener('click', pause);
     playPrev.addEventListener('click', leftFun);
+    playNext.addEventListener('click', rightFun);
 }
 
 /**
@@ -119,6 +120,17 @@ function rightFun() {
     } else {
         currentSongIndex -= currentSongIndex;
     }
+}
+
+function selfFun() {
+    songName.innerHTML = playList[currentSongIndex].songName;
+    singer.innerHTML = playList[currentSongIndex].singer;
+    audio.src = 'assets/audio/' + playList[currentSongIndex].path;
+    playerTrack.classList.add('play');
+    playPause.children.classList = 'fa-solid fa-pause';
+    albums.classList.add('play');
+    albums.children[currentSongIndex].className = 'play';
+    audio.play();
 }
 
 /** 
