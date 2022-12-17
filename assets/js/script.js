@@ -122,6 +122,10 @@ function rightFun() {
     }
 }
 
+/**
+ * Set up function for music play
+ */
+
 function selfFun() {
     songName.innerHTML = playList[currentSongIndex].songName;
     singer.innerHTML = playList[currentSongIndex].singer;
@@ -129,8 +133,21 @@ function selfFun() {
     playerTrack.classList.add('play');
     playPause.children.classList = 'fa-solid fa-pause';
     albums.classList.add('play');
-    albums.children[currentSongIndex].className = 'play';
+    changeAlbumsCover();
     audio.play();
+}
+
+/**
+ * Set up function for change alums cover images as user changes different songs. For realizing this 
+ * function, using for loop to remove all the className = 'play', then let current songs' image to 
+ * show on the alums cover
+ */
+
+function changeAlbumsCover() {
+    for(let i = 0; i < albums.children.length; i++) {
+        albums.children[i].className = '';
+    }
+    albums.children[currentSongIndex].className = 'play';
 }
 
 /** 
