@@ -93,7 +93,23 @@ let isPlay = true;
 function init() {
     render(playList[currentSongIndex]);
     playPause.addEventListener('click', pause);
+    playPrev.addEventListener('click', leftFun);
 }
+
+/**
+ * Set up function for play previous button that can allow user to go backward.
+ */
+function leftFun() {
+    currentSongIndex = currentSongIndex -1;
+    if(currentSongIndex > -1) {
+        selfFun();
+    } else {
+        currentSongIndex += currentSongIndex;
+    }
+}
+
+
+
 
 /** 
  * Build a function to fill in the songName and singer information to music box, which can 
@@ -131,6 +147,9 @@ function pause() {
       isPlay = true;
     }
   }
+
+
+
 
 init();
 
