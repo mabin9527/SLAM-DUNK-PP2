@@ -108,8 +108,18 @@ function leftFun() {
     }
 }
 
+/**
+ * Set up function for play previous button that can allow user to go forword.
+ */
 
-
+function rightFun() {
+    currentSongIndex = currentSongIndex + 1;
+    if(currentSongIndex < playList.length) {
+        selfFun()
+    } else {
+        currentSongIndex -= currentSongIndex;
+    }
+}
 
 /** 
  * Build a function to fill in the songName and singer information to music box, which can 
