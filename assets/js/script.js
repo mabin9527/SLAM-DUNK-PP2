@@ -33,8 +33,9 @@ function setActive() {
 }
 setActive();
 
-/** sey up music box function to play the music
- * 
+{
+/** 
+ * First of all, set up a playList array to have every song's information.
  */
 
 
@@ -63,7 +64,9 @@ const playList = [ {
     path: 'song4.mp3'
 }
 ]
+
 // get the elements for javascript
+
 let audio = document.querySelector('.audio');
 let playerTrack = document.querySelector('.player-track');
 let songName = document.querySelector('.song-name');
@@ -187,8 +190,13 @@ function pause() {
     }
   }
 
-
-
-
 init();
+
+/**
+ * Sadly there is always a return value = NaN by chekcing console.log(totalTime) when 
+ * I tried to used totalTime = audio.duration to show the total time on designed music box,
+ * . And for time reason, I have to leave it for later.
+ */
+}
+
 
