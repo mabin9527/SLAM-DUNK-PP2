@@ -95,37 +95,42 @@ function init() {
     playPause.addEventListener('click', pause);
 }
 
-/** Build a function to fill in the songName and singer information to music box, which can 
+/** 
+ * Build a function to fill in the songName and singer information to music box, which can 
  *  be taken from the playList array.
  */
 
 function render(song) {
     songName.innerHTML = song.songName;
     singer.innerHTML = song.singer;
-    audio.src = 'assets/audio/' + song.path;
+    audio.src = "assets/audio/" + song.path;
 }
 
-//Add function to play and play-pause
+
+/**
+ * Add function to play and pause. Use isPlay to judge if the player is on play. The play button changes 
+ * to pause button and default audio player is on when isPlay is true. 
+ */
 
 function pause() {
-    if(isPlay) {
-        playerTrack.classList.add('play');
-        playPause.children.classList = 'fa-solid fa-pause';
-        albums.classList.add('play');
-        audio.play();
-        document.querySelector('#open').style.display = 'block';
-        document.querySelector('#close').style.display = 'none';
-        isPlay = false;
+    if (isPlay) {
+      playerTrack.classList.add("play");
+      playPause.children.classList = "fa-solid fa-pause";
+      albums.classList.add("play");
+      audio.play();
+      document.querySelector("#open").style.display = "block"
+      document.querySelector("#close").style.display = "none"
+      isPlay = false;
     } else {
-        playerTrack.classList.remove('play');
-        playPause.children.classList = 'fa-solid fa-play';
-        albums.classList.remove('play');
-        audio.pause();
-        document.querySelector('#open').style.display = 'none';
-        document.querySelector('#close').style.display = 'block';
-        isPlay = true;
+      playerTrack.classList.remove("play");
+      playPause.children.classList = "fa-solid fa-play";
+      albums.classList.remove("play");
+      audio.pause();
+      document.querySelector("#open").style.display = "none"
+      document.querySelector("#close").style.display = "block"
+      isPlay = true;
     }
-}
+  }
 
 init();
 
