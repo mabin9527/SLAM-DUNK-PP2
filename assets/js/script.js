@@ -15,6 +15,7 @@ function changeCurrent() {
 }
 changeCurrent();
 
+
 /** set up function for slides. when mouse clicked smaller images that will be fully displayed by using two 
 * for loops. The first one will remove class attribute and then second for add class attribute to the images
 that is clicked */
@@ -32,6 +33,7 @@ function setActive() {
     }
 }
 setActive();
+
 
 {
 /** 
@@ -199,20 +201,4 @@ init();
  */
 }
 
-/**
- * Set up all images in gallery responsive
- */
 
-/**
- *  Make images in the middle of screen by using screen width devided by each image's box height.
- *  And let one image width to be blank on two side of images
- */
-
-function setWidth() {
-    let gallery = document.querySelector('.gallery');
-    let galleryBox = document.querySelector('.gallery-box');
-    let screenWidth = document.documentElement.clientWidth;
-    let galleryBoxWidth = galleryBox[0].offsetWidth;
-    let rowsNum = Math.floor(screenWidth / galleryBoxWidth) - 1;
-}
-setWidth();
