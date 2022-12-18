@@ -25,12 +25,11 @@ changeCurrent();
 
 function waterFlow() {
     let gallery = document.querySelector('.gallery');
-    let galleryBox = document.querySelector('.gallery-box');
     let screenWidth = document.documentElement.clientWidth;
-    let galleryBoxWidth = galleryBox.offsetWidth;
+    let galleryBoxWidth = gallery.children[0].offsetWidth;
     let rowsNum = Math.floor(screenWidth / galleryBoxWidth) - 1;
     gallery.style.cssText = 'width:' + rowsNum * galleryBoxWidth + 'px;margin: 70px auto;';
-    getMinHeight(galleryBox, rowsNum);
+    getMinHeight(gallery, rowsNum);
 }
 waterFlow();
 
@@ -39,6 +38,17 @@ waterFlow();
  * have smallest height.
  */
 
-function getMinHeight(galleryBox, rowsNum) {
+function getMinHeight(gallery, rowsNum) {
+    let rowsHeightArray = [];
+    for (let i = 0; i < gallery.children.length; i++) {
+        if(i < rowsNum) {
+            rowsHeightArray[i] = gallery.children[i].offsetHeight;
+        } else {
+            let minHeightOfRows = Math.min.apply(null, rowsHeightArray);
+            let minHeightOfIndex = rowsHeightArray.indexOf(minHeightOfRows);
+        }
+    }
+    console.log(colsHeightArray);
 
 }
+getMinHeight();
