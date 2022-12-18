@@ -213,5 +213,6 @@ function setWidth() {
     let galleryBox = document.querySelector('.gallery-box');
     let screenWidth = document.documentElement.clientWidth;
     let galleryBoxWidth = galleryBox[0].offsetWidth;
+    let rowsNum = Math.floor(screenWidth / galleryBoxWidth) - 1;
 }
 setWidth();
