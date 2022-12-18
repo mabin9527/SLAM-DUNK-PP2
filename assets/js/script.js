@@ -199,4 +199,18 @@ init();
  */
 }
 
+/**
+ * Set up all images in gallery responsive
+ */
 
+/**
+ *  Make images in the middle of screen by using screen width devided by each image's box height.
+ *  And let one image width to be blank on two side of images
+ */
+
+function setWidth() {
+    let gallery = document.querySelector('.gallery');
+    let galleryBox = document.querySelector('.gallery-box');
+    
+}
+setWidth();
