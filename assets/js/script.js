@@ -211,6 +211,7 @@ init();
 function setWidth() {
     let gallery = document.querySelector('.gallery');
     let galleryBox = document.querySelector('.gallery-box');
+    let screenWidth = document.documentElement.clientWidth;
     
 }
 setWidth();
