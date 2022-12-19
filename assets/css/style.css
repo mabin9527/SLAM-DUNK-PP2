@@ -375,6 +375,8 @@ footer {
     width: 100%;
     background-color: #404040;
     margin-top: 10px;
+    position: fixed;
+    bottom: 0;
 }
  
 footer ul {
@@ -408,6 +410,7 @@ footer ul li a {
 
 .gallery-box {
     float: left;
+    overflow: hidden;
 }
 
 .box-img {
