@@ -11,3 +11,20 @@ function changeCurrent() {
     }
 }
 changeCurrent();
+
+/**
+ * Let the comments displayed on the comments-board. Use if else to judge whether clients leave 
+ * the comments. If not, return an alert to remind user of leaving their thinking. 
+ */
+
+let messege = document.querySelector('#messege');
+let btn = document.querySelector('#submit-btn');
+let commentBoard = document.querySelector('.comment-board');
+
+btn.addEventListener('click', function(){
+    if(messege == '') {
+        alert('Please type your comment');
+        return false;
+    }
+    
+})

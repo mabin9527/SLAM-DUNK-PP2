@@ -101,7 +101,6 @@ nav {
     bottom: 10px;
 }
 
-
 .slides {
     margin-top: 70px;
     overflow: hidden;
@@ -429,6 +428,97 @@ footer ul li a {
     width: 250px;
     height: auto;
     border-radius: 5px;
+}
+
+section {
+    margin: 2.5rem 0.625rem 0;
+}
+/* Set up background-image in form and display the content box at the center */
+
+form,
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/bg3.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Define login-content and register container */
+
+.contact-content {
+    position: relative;
+    width: 60rem;
+    height: 30rem;
+    background-color: #DBDBDB;
+    border-radius: 1.88rem;
+    padding: 1.88rem;
+}
+.comment-board {
+    display: inline-block;
+    width: 31.25rem;
+    height: 100%;
+    /* background: url(../images/bg3.jpg) no-repeat; */
+    /* background-size: cover; */
+    border-radius: 1.25rem 0 0 1.25rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    color: #fff;
+    font-size: 14px;
+    margin: .31rem;
+    letter-spacing: 2px;
+}
+.comment {
+    width: 28.75rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 1.88rem 1.88rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #787878;
+}
+.comment {
+    margin-top: 1.2rem;
+}
+.comment input,
+.comment textarea {
+    margin-bottom: 1.25rem;
+    width: 18rem;
+    height: 2.25rem;
+    padding: 0 1.25rem;
+    border-radius: 2.25rem;
+/* remove the default border and outline for input  */
+    border: none;
+    outline: none;
+    font-size: 1.13rem;
+}
+.comment textarea {
+    height: 10rem;
+    border-radius: 1rem;
+}
+.comment label {
+    font-size: 1.13rem;
+    margin-bottom: .31rem;
+    font-weight: 900;
+}
+#submit-btn {
+    margin-top: 1.25rem;
+    width: 12.5rem;
+    height: 2.5rem;
+    background-color: #ccc;
+/* remove default border for button */
+    border: none;
+    border-radius: 2.5rem;
+    font-size: 1.13rem;
+}
+#submit-btn:hover {
+    cursor: pointer;
 }
 
 
