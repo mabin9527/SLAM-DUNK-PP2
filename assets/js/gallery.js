@@ -15,50 +15,48 @@ function changeCurrent() {
 }
 changeCurrent();
 
-/**
- * Set up all images in gallery responsive
- */
+
 
 /**
  *  Make images in the middle of screen by using screen width devided by each image's box height.
- *  And let one image width to be blank on two side of images
+ *  Set up images position which allows the second row of images going to underneath first row of 
+ *  images that have smallest height.
  */
 
+window.onload = function() {
 
-let gallery = document.querySelector('.gallery');
-let screenWidth = document.documentElement.clientWidth;
-let galleryBoxWidth = gallery.children[0].offsetWidth;
-let rowsNum = Math.floor(screenWidth / galleryBoxWidth) - 1;
+    waterFall();
 
-function waterFall() {
-    window.addEventListener('resize', function (){
-        gallery.style.cssText = 'width:' + rowsNum * galleryBoxWidth + 'px;margin: 70px auto;';
-        getMinHeight();
-    })
-}
-waterFall();
-
-
-
-/**
- * Set up images position which allows the second row of images going to underneath first row of images that 
- * have smallest height.
- */
-
-function getMinHeight() {
-    let rowsHeightArray = [];
-    for (let i = 0; i < gallery.children.length; i++) {
-        if(i < rowsNum) {
-            rowsHeightArray[i] = gallery.children[i].offsetHeight;
-        } else {
-            let minHeightOfRows = Math.min.apply(null, rowsHeightArray);
-            let minHeightOfIndex = rowsHeightArray.indexOf(minHeightOfRows);
-            gallery.children[i].style.position = 'absolute';
-            gallery.children[i].style.top = minHeightOfRows + 'px'; 
-            gallery.children[i].style.left = gallery.children[minHeightOfIndex].offsetLeft + 'px';
-            rowsHeightArray[minHeightOfIndex] = rowsHeightArray[minHeightOfIndex] + gallery.children[i].offsetHeight;
+    function waterFall() {
+        let gallery = document.querySelector('.gallery');
+        let screenWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        let galleryBox = document.querySelectorAll('.gallery-box');
+        let galleryBoxWidth = galleryBox[0].offsetWidth;
+        let rowsNum = Math.floor(screenWidth / galleryBoxWidth);
+        gallery.style.width = galleryBoxWidth * rowsNum + 'px';
+        gallery.style.height = '100%';
+        gallery.style.margin = '70px auto';
+        let arr = [];
+        for(let i = 0; i < galleryBox.length; i++) {
+            galleryBox[i].style = '';
+            if(i < rowsNum) {
+                arr.push(galleryBox[i].offsetHeight);
+            } else {
+                let minHeightOfRows = Math.min.apply(null, arr);
+                let minHeightOfIndex = arr.indexOf(minHeightOfRows);
+                galleryBox[i].style = `position:absolute;left:${minHeightOfIndex * galleryBoxWidth}px;top:${minHeightOfRows}px`;
+                arr[minHeightOfIndex] += galleryBox[i].offsetHeight;
+            }
         }
     }
-
+    window.addEventListener('resize', function(){
+        waterFall();
+    })
 }
+
+
+
+
+
+
 
