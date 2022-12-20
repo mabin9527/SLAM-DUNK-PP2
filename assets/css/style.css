@@ -430,13 +430,12 @@ footer ul li a {
     border-radius: 5px;
 }
 
-section {
+.user {
     margin: 2.5rem 0.625rem 0;
 }
 /* Set up background-image in form and display the content box at the center */
 
-form,
-.banner {
+form {
     width: 100vw;
     height: 100vh;
     background: url(../images/bg3.jpg) no-repeat;
@@ -517,6 +516,39 @@ form,
 }
 #submit-btn:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+
+    form {
+        background: none;
+    }
+    .comment {
+        background-color: #a6a6a6;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 1.25rem;
+        margin-top: -65px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .comment-board {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+        background-color: #a6a6a6;
+        width: 90%;
+        border-radius: 1.25rem;
+        padding: 10px;
+    }
+    .contact-content {
+        background-color: #fff;
+    }
+    
+    
 }
 
 
