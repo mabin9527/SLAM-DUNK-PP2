@@ -31,6 +31,7 @@ btn.onclick = function() {
         li.innerHTML = messege.value + '<a href="javascript:;"><i class="fa-solid fa-trash"></i></a>';
         commentBoard.insertBefore(li, commentBoard.children[0]);
         let aLink = document.querySelectorAll('a');
+        
         for (let i in aLink) {
             aLink[i].onclick = function() {
                 commentBoard.removeChild(this.parentNode);

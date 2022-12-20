@@ -451,7 +451,7 @@ form,
     position: relative;
     width: 60rem;
     height: 30rem;
-    background-color: #DBDBDB;
+    background-color: #a6a6a6;
     border-radius: 1.88rem;
     padding: 1.88rem;
 }
@@ -459,17 +459,15 @@ form,
     display: inline-block;
     width: 31.25rem;
     height: 100%;
-    /* background: url(../images/bg3.jpg) no-repeat; */
-    /* background-size: cover; */
     border-radius: 1.25rem 0 0 1.25rem;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     color: #fff;
     font-size: 14px;
     margin: .31rem;
     letter-spacing: 2px;
+}
+.comment-board a {
+    color:#f2f2f2;
+    margin-left: 30px;
 }
 .comment {
     width: 28.75rem;
@@ -481,7 +479,7 @@ form,
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #787878;
+    color: #f2f2f2;
 }
 .comment {
     margin-top: 1.2rem;
@@ -511,7 +509,7 @@ form,
     margin-top: 1.25rem;
     width: 12.5rem;
     height: 2.5rem;
-    background-color: #ccc;
+    background-color: #f2f2f2;
 /* remove default border for button */
     border: none;
     border-radius: 2.5rem;
