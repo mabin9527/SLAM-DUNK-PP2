@@ -11,6 +11,7 @@ The purpose for doing this site was motivated by Slam-Dunk film coming back next
 # Table of contents
 - [Wireframes](#wireframes)
 - [Design](#design)
+- [Technologies Used](#technologies-used)
 - [Features](#features)
     - [Existing Features](#existing-features)
         - [Navigation](#navigation)
@@ -34,9 +35,37 @@ The purpose for doing this site was motivated by Slam-Dunk film coming back next
 
 **Text & Background color**
 
-To give my white Rock, Paper, Scissors buttons with their white circles a nice contrast, I decided to go with a teal colour. The text color is black, and it works well together with teal. It has been checked with a Contrast Checker (see testing section).
+In order to give users better vision experience, dark grey is selected to be background color for navigation-bar and footer and light grey for text color and music player backgrond player, which gives a feeling of clean and luxurious. Also users are able to find useful information on the site.
 
 ![Background color](assets/images/readme/adobe-color.png)
+
+### Fonts
+For consistency the webpage was designed by importing Nato Sans font style that look likes simple, clean and friendly to website user.
+
+# Technologies Used
+
+### Languages
+- HTML
+- CSS
+- Javascript
+
+### Tools
+- Git
+- GitHub
+- Gitpod
+- Google Fonts
+- Adobe Color
+- Font Awsome
+- Favicon<span>.</span>io
+
+# Features
+
+## Existing Features:
+
+### Navigation
+
+
+
 
 
 
