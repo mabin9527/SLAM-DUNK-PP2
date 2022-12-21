@@ -30,5 +30,13 @@ The purpose for doing this site was motivated by Slam-Dunk film coming back next
 ![Tables Version](assets/images/readme/iPad-homepage.png)
 ![Phone Version](assets/images/readme/iPhone-homepage.png)
 
+# Design
+
+**Text & Background color**
+
+To give my white Rock, Paper, Scissors buttons with their white circles a nice contrast, I decided to go with a teal colour. The text color is black, and it works well together with teal. It has been checked with a Contrast Checker (see testing section).
+
+![Background color](assets/images/readme/adobe-color.png)
+
 
 
