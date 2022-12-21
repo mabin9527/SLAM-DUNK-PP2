@@ -64,6 +64,11 @@ For consistency the webpage was designed by importing Nato Sans font style that 
 
 ### Navigation
 
+- To provide the user with simple and clean navigation across all three pages, header includes music logo, homepage, gallery and user icon. 
+- The related text will be displayed under the icon when mouse is over the icon. At the same time, icon is smaller and move to top-direction. 
+- To realize function previous mentioned, Javascript has been applied which add a class style when mouse hover.
+
+![Logo and navbar](assets/images/readme/nav-bar.png)
 
 
 
