@@ -139,7 +139,7 @@ nav {
 /* learned from aienxiaohuihui on bilibili.com */
 
 .music-box {
-    margin: 115px auto;
+    margin: 105px auto;
     width: 430px;
     height: 100px;
     z-index: 1;
@@ -365,9 +365,7 @@ nav {
 }
 
 .audio {
-    position: absolute;
-    height: 40px;
-    z-index: -3;
+    display: none;
 }
 
 footer {
@@ -549,6 +547,19 @@ form {
         background-color: #fff;
     }
 }
+
+@media screen and (max-width: 560px) {
+    .wrapper li {
+        display: none;
+    }
+    .wrapper .active {
+        display: block;
+    }
+    .music-box {
+        width: 100%;
+    }
+}
+
 
 
 

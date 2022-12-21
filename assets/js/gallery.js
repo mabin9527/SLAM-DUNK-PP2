@@ -27,6 +27,7 @@ changeCurrent();
 
 function createColumns(ele) {
     let width = ele.offsetWidth;
+    let column;
     if (width >= 1200) {
         column = 4;
     }
@@ -54,7 +55,7 @@ function render() {
     let columnWidth = (gallery.offsetWidth - (column - 1) * spacing) / column;
     let galleryBox = document.querySelectorAll('.gallery-box');
     let arr = [];
-    for (i = 0; i < galleryBox.length; i++) {
+    for (let i = 0; i < galleryBox.length; i++) {
         galleryBox[i].style.width = columnWidth + 'px';
         if(i < column) {
             arr.push(galleryBox[i].offsetHeight);

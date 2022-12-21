@@ -147,6 +147,16 @@ There is no error found on CSS file.
 <img src="assets/images/readme/css-validation.png">
 </details>
 
+### Performance 
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. The page achieved good performance on desktop and mobile.
+
+<details><summary>Desktop</summary>
+<img src="assets/images/readme/lighthouse-performance-desktop.png">
+</details>
+<details><summary>Mobile</summary>
+<img src="docs/validation/lighthouse-performance-mobile.png">
+</details>
+
 
 
 
