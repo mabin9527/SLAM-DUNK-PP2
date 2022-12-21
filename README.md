@@ -87,6 +87,32 @@ For consistency the webpage was designed by importing Nato Sans font style that 
 ![Music-player](assets/images/readme/music-player.png)
 ![Music-player-on](assets/images/readme/music-player-on.png)
 
+### Footer
+
+- Featured on all three pages
+
+![Footer](assets/images/readme/footer.png)
+
+### Gallery
+
+- The photo gallery is fully explained the passion and history of Slam Dunk cartoon.
+- It is fully responsive manipulated by Javascript.
+
+![Gallery](assets/images/readme/gallery-photo.png)
+
+### User
+
+- Show customers the way to give us feedback to the musci player.
+- The comments can be displayed directly on the left side that allows other users to see their opions. Additionally, those comments can be deleted by click trash icon right side.
+
+![User](assets/images/readme/user-comments.png)
+
+---
+
+## Future Features
+
+In the future, the track-time will be realized in music box by using Javascript. I have little bit thought on play-time. But there are always some bugs unsoloved. I will continue to work those features which allows user to fast-forward or -backward to some specific point.
+
 
 
 
