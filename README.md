@@ -77,6 +77,16 @@ For consistency the webpage was designed by importing Nato Sans font style that 
 
 ![Slides](assets/images/readme/slides.png)
 
+### Music-player
+
+- Music player containes three main parts that provide users with songs' information and give them a better vision experience.
+- Left part is albums-cover that can be rotated and is going up when music player is on. Besides, albums-cover is automatically changed as songs are different.
+- Main part is control button that allows user play last and next songs. Also it can be stoped through play / pause button.
+- The third part is songs' information including name, singer and play time. It is displayed only when player is on.
+
+![Music-player](assets/images/readme/music-player.png)
+![Music-player-on](assets/images/readme/music-player-on.png)
+
 
 
 
