@@ -7,10 +7,10 @@ function changeCurrent() {
     for (let i = 0; i < navBar.children.length; i++) {
         navBar.children[i].addEventListener('mouseover', function() {
             this.className = 'current';
-        })
+        });
         navBar.children[i].addEventListener('mouseout', function() {
             this.className = '';
-        })
+        });
     }
 }
 changeCurrent();
@@ -29,13 +29,13 @@ function setActive() {
                 wrapper.children[i].className = '';
             }
             this.className = 'active';
-        })
+        });
     }
 }
 setActive();
 
 
-{
+
 /** 
  * First of all, set up a playList array to have every song's information.
  */
@@ -65,7 +65,7 @@ const playList = [ {
     singer: '大黑摩季',
     path: 'song4.mp3'
 }
-]
+];
 
 // get the elements for javascript
 
@@ -121,7 +121,7 @@ function leftFun() {
 function rightFun() {
     currentSongIndex = currentSongIndex + 1;
     if(currentSongIndex < playList.length) {
-        selfFun()
+        selfFun();
     } else {
         currentSongIndex -= currentSongIndex;
     }
@@ -163,7 +163,7 @@ function changeAlbumsCover() {
 function render(song) {
     songName.innerHTML = song.songName;
     singer.innerHTML = song.singer;
-    audio.src = "assets/audio/" + song.path;
+    audio.src = 'assets/audio/' + song.path;
 }
 
 
@@ -174,20 +174,20 @@ function render(song) {
 
 function pause() {
     if (isPlay) {
-      playerTrack.classList.add("play");
-      playPause.children.classList = "fa-solid fa-pause";
-      albums.classList.add("play");
+      playerTrack.classList.add('play');
+      playPause.children.classList = 'fa-solid fa-pause';
+      albums.classList.add('play');
       audio.play();
-      document.querySelector("#open").style.display = "block"
-      document.querySelector("#close").style.display = "none"
+      document.querySelector('#open').style.display = 'block';
+      document.querySelector('#close').style.display = 'none';
       isPlay = false;
     } else {
-      playerTrack.classList.remove("play");
-      playPause.children.classList = "fa-solid fa-play";
-      albums.classList.remove("play");
+      playerTrack.classList.remove('play');
+      playPause.children.classList = 'fa-solid fa-play';
+      albums.classList.remove('play');
       audio.pause();
-      document.querySelector("#open").style.display = "none"
-      document.querySelector("#close").style.display = "block"
+      document.querySelector('#open').style.display = 'none';
+      document.querySelector('#close').style.display = 'block';
       isPlay = true;
     }
   }
@@ -199,6 +199,6 @@ init();
  * I tried to used totalTime = audio.duration to show the total time on designed music box,
  * . And for time reason, I have to leave it for later.
  */
-}
+
 
 

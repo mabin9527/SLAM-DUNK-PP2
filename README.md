@@ -113,6 +113,21 @@ For consistency the webpage was designed by importing Nato Sans font style that 
 
 In the future, the track-time will be realized in music box by using Javascript. I have little bit thought on play-time. But there are always some bugs unsoloved. I will continue to work those features which allows user to fast-forward or -backward to some specific point.
 
+## Validation
+
+### Javascript Validation
+
+The JS Hint was used to validate the Javascript of the website. There are no errors found across all three pages. 
+<details><summary>Homepage</summary>
+<img src="assets/images/readme/homepage-jshint.png">
+</details>
+<details><summary>Gallery</summary>
+<img src="assets/images/readme/gallery-jshint.png">
+</details>
+<details><summary>User</summary>
+<img src="assets/images/readme/user-jshint.png">
+</details>
+
 
 
 
