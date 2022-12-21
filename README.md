@@ -128,6 +128,18 @@ The JS Hint was used to validate the Javascript of the website. There are no err
 <img src="assets/images/readme/user-jshint.png">
 </details>
 
+### HTML Validation
+The W3C Markup Validation Service was used to validate the HTML of the website. There are no errors found across all three pages. 
+<details><summary>Homepage</summary>
+<img src="assets/images/readme/homepage-html.png">
+</details>
+<details><summary>Gallery</summary>
+<img src="assets/images/readme/gallery-html.png">
+</details>
+<details><summary>User</summary>
+<img src="assets/images/readme/user-html.png">
+</details>
+
 
 
 
