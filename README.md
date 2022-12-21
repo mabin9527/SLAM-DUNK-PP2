@@ -70,6 +70,12 @@ For consistency the webpage was designed by importing Nato Sans font style that 
 
 ![Logo and navbar](assets/images/readme/nav-bar.png)
 
+### Slides
+
+- Compared with normal carousel the design of this site is more attractive and fun.
+- User can see full images by clicking slides, which can be realized combining with Javascript and CSS.
+
+![Slides](assets/images/readme/slides.png)
 
 
 
