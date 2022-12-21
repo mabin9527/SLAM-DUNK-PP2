@@ -23,36 +23,33 @@ changeCurrent();
  *  images that have smallest height.
  */
 
-window.onload = function() {
+// make the gallery responsive
 
-    waterFall();
-
-    function waterFall() {
-        let gallery = document.querySelector('.gallery');
-        let screenWidth = document.documentElement.clientWidth || document.body.clientWidth;
-        let galleryBox = document.querySelectorAll('.gallery-box');
-        let galleryBoxWidth = galleryBox[0].offsetWidth;
-        let rowsNum = Math.floor(screenWidth / galleryBoxWidth);
-        gallery.style.width = galleryBoxWidth * rowsNum + 'px';
-        gallery.style.height = '100%';
-        gallery.style.margin = '70px auto';
-        let arr = [];
-        for(let i = 0; i < galleryBox.length; i++) {
-            galleryBox[i].style = '';
-            if(i < rowsNum) {
-                arr.push(galleryBox[i].offsetHeight);
-            } else {
-                let minHeightOfRows = Math.min.apply(null, arr);
-                let minHeightOfIndex = arr.indexOf(minHeightOfRows);
-                galleryBox[i].style = `position:absolute;left:${minHeightOfIndex * galleryBoxWidth}px;top:${minHeightOfRows}px`;
-                arr[minHeightOfIndex] += galleryBox[i].offsetHeight;
-            }
-        }
+function createColumns(ele) {
+    let width = ele.offsetWidth;
+    if (width >= 1200) {
+        _column = 4;
     }
-    window.addEventListener('resize', function(){
-        waterFall();
-    })
+
+    if (width < 1200 && width >= 992) {
+        _column = 3;
+    }
+
+    if (width < 992 && width >= 768) {
+        _column = 2;
+    }
+
+    if (width < 768) {
+        _column = 1;
+    }
+    return _column;
 }
+
+function render() {
+    let gallery = document.querySelector('.gallery');
+    gallery.style.marginTop = 70 + 'px';
+}
+ 
 
 
 

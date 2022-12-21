@@ -140,6 +140,13 @@ The W3C Markup Validation Service was used to validate the HTML of the website. 
 <img src="assets/images/readme/user-html.png">
 </details>
 
+### CSS Validation
+The W3C Jigsaw CSS Validation Service was used to validate CSS of the website.
+There is no error found on CSS file.
+<details><summary>style.css</summary>
+<img src="assets/images/readme/css-validation.png">
+</details>
+
 
 
 
