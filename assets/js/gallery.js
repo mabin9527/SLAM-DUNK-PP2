@@ -28,27 +28,50 @@ changeCurrent();
 function createColumns(ele) {
     let width = ele.offsetWidth;
     if (width >= 1200) {
-        _column = 4;
+        column = 4;
     }
 
     if (width < 1200 && width >= 992) {
-        _column = 3;
+        column = 3;
     }
 
     if (width < 992 && width >= 768) {
-        _column = 2;
+        column = 2;
     }
 
     if (width < 768) {
-        _column = 1;
+        column = 1;
     }
-    return _column;
+    return column;
 }
 
 function render() {
     let gallery = document.querySelector('.gallery');
     gallery.style.marginTop = 70 + 'px';
+    gallery.style.paddingBottom = 40 + 'px';
+    let column = createColumns(gallery);
+    let spacing = 0;
+    let columnWidth = (gallery.offsetWidth - (column - 1) * spacing) / column;
+    let galleryBox = document.querySelectorAll('.gallery-box');
+    let arr = [];
+    for (i = 0; i < galleryBox.length; i++) {
+        galleryBox[i].style.width = columnWidth + 'px';
+        if(i < column) {
+            arr.push(galleryBox[i].offsetHeight);
+            galleryBox[i].style.top = 0;
+            galleryBox[i].style.left = (columnWidth + spacing) * i + 'px';
+        } else {
+            let minHeight = Math.min(...arr);
+            let minHeightIndex = arr.indexOf(minHeight);
+            galleryBox[i].style.top = minHeight + spacing + 'px';
+            galleryBox[i].style.left = (spacing + columnWidth) * minHeightIndex + 'px';
+            arr[minHeightIndex] += galleryBox[i].offsetHeight + spacing;
+        }
+    }
 }
+
+window.addEventListener('load', render);
+window.addEventListener('resize', render);
  
 
 

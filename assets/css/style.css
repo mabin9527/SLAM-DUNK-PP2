@@ -403,15 +403,14 @@ footer ul li a {
 /* gallery style */
 
 .gallery {
-    background-color: rgba(0, 0, 0, .02);
+    padding-bottom: 40px;
     position: relative;
-    overflow: hidden;
-    height: auto;
+    margin: 0 auto;
 }
 
 .gallery-box {
-    float: left;
-    overflow: hidden;
+    position: absolute;
+    transition: left .5s, top .5s;
 }
 
 .box-img {
@@ -427,7 +426,8 @@ footer ul li a {
 
 .box-img img {
     display: block;
-    width: 250px;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
