@@ -443,6 +443,7 @@ form {
     justify-content: center;
     align-items: center;
 }
+
 /* Define login-content and register container */
 
 .contact-content {
@@ -489,7 +490,6 @@ form {
     height: 2.25rem;
     padding: 0 1.25rem;
     border-radius: 2.25rem;
-/* remove the default border and outline for input  */
     border: none;
     outline: none;
     font-size: 1.13rem;
@@ -508,7 +508,6 @@ form {
     width: 12.5rem;
     height: 2.5rem;
     background-color: #f2f2f2;
-/* remove default border for button */
     border: none;
     border-radius: 2.5rem;
     font-size: 1.13rem;

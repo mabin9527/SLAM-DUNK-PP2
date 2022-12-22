@@ -154,7 +154,7 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <img src="assets/images/readme/lighthouse-performance-desktop.png">
 </details>
 <details><summary>Mobile</summary>
-<img src="docs/validation/lighthouse-performance-mobile.png">
+<img src="assets/images/readme/lighthouse-performance-mobile.png">
 </details>
 
 

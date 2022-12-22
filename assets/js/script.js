@@ -73,13 +73,6 @@ let audio = document.querySelector('.audio');
 let playerTrack = document.querySelector('.player-track');
 let songName = document.querySelector('.song-name');
 let singer = document.querySelector('.singer');
-let trackTime = document.querySelector('.track-time');
-let currentTime = document.querySelector('.current-time');
-let totalTime = document.querySelector('.total-time');
-let progressBox = document.querySelector('.progress-box');
-let playTime = document.querySelector('.play-time');
-let hoverBar = document.querySelector('.hover-bar');
-let progressBar = document.querySelector('progress-bar');
 let albums = document.querySelector('.albums');
 let playPause = document.querySelector('.play-pause');
 let playPrev = document.querySelector('.play-prev');
@@ -102,6 +95,7 @@ function init() {
     playNext.addEventListener('click', rightFun);
 }
 
+init();
 /**
  * Set up function for play previous button that can allow user to go backward.
  */
@@ -192,7 +186,7 @@ function pause() {
     }
   }
 
-init();
+
 
 /**
  * Sadly there is always a return value = NaN by chekcing console.log(totalTime) when 
