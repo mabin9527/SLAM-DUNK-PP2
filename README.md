@@ -202,7 +202,8 @@ Part of CSS code for music was referenced form aienxiaohuihui on bilibili.com.
 
 ## Acknowledgements
 
-There were many chanllenges ahead of me when I digged into my second project especially Javascript part. I have to spend plenty of time to fix bugs that come to show on console. Besides, I want to thank the people in slack who help me solve some issues. 
+There were many chanllenges ahead of me when I digged into my second project especially Javascript part. I have to spend plenty of time to fix bugs that come to show on console. Besides, I want to thank the people in slack who help me solve the issues and give me advices to finish my project.
+
 
 
 
