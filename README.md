@@ -196,6 +196,14 @@ https://mabin9527.github.io/SLAM-DUNK-PP2/
 - [bg4](assets/images/bg4.jpg): Photo by <a href="https://wall.alphacoders.com/big.php?i=756782">RyuZU²</a> on <a href="https://wall.alphacoders.com/">Wallpaper Abyss</a>
 - [bg5](assets/images/bg5.jpg): Photo by <a href="https://wall.alphacoders.com/big.php?i=231693">darkness</a> on <a href="https://wall.alphacoders.com/">Wallpaper Abyss</a>
 
+### Code
+
+Part of CSS code for music was referenced form aienxiaohuihui on bilibili.com.
+
+## Acknowledgements
+
+There were many chanllenges ahead of me when I digged into my second project especially Javascript part. I have to spend plenty of time to fix bugs that come to show on console. Besides, I want to thank the people in slack who help me solve some issues. 
+
 
 
 
