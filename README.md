@@ -167,6 +167,34 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 
 - For progress bar, it should have fast-forward and fast-backward function. I don't have a clue to do it now. But I will definately continue to do it.
 
+## Deployment
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+In the GitHub repository, navigate to the Settings tab. On the left-hand side under ‘Code and automation’, select ‘Pages’ and from the source section drop-down menu, select the Master Branch. Once the master branch has been selected, the page will be automatically refresh with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here - 
+https://mabin9527.github.io/SLAM-DUNK-PP2/
+
+## Credits
+
+### Media
+
+- [img1](assets/images/gallery/img1.jpeg): Photo can be found <a href="https://www.cna.com.tw/news/amov/202209230189.aspx">here</a>
+- [img2](assets/images/gallery/img2.jpeg): Photo can be found <a href="https://www.jiemian.com/article/2454954.html">here</a>
+- [img3](assets/images/gallery/img3.jpeg): Photo can be found <a href="https://www.gq.com.tw/entertainment/article/the-first-slam-dunk-%E5%8F%B0%E7%81%A3">here</a>
+- [img4](assets/images/gallery/img4.jpeg): Photo can be found <a href="https://www.gq.com.tw/gadget/article/%E7%81%8C%E7%B1%83%E9%AB%98%E6%89%8B-%E6%89%8B%E9%81%8A-ios-android-%E4%B8%8B%E8%BC%89">here</a>
+- [img5](assets/images/gallery/img5.jpeg): Photo can be found <a href="https://www.orientaldaily.com.my/news/entertainment/2022/11/22/528337">here</a>
+- [img6](assets/images/gallery/img6.jpeg): Photo can be found <a href="https://mb.com.ph/2021/01/07/slam-dunk-author-teases-fans-with-upcoming-film/">here</a>
+- [img7](assets/images/gallery/img7.jpeg): Photo can be found <a href="https://www.theanimedaily.com/the-first-slam-dunk-release-date/">here</a>
+- [img8](assets/images/gallery/img8.jpeg): Photo can be found <a href="https://www.rappler.com/entertainment/movies/the-first-slam-dunk-teaser-trailer/">here</a>
+- [img9](assets/images/gallery/img9.jpeg): Photo can be found <a href="https://www.si.com/extra-mustard/2013/05/07/slam-dunk-how-japans-love-of-basketball-can-be-traced-back-to-a-comic">here</a>
+- [img10](assets/images/gallery/img10.jpeg): Photo can be found <a href="https://www.thetealmango.com/entertainment/the-new-the-first-slam-dunk-trailer-is-here/">here</a>
+- [img11](assets/images/gallery/img11.jpeg): Photo can be found <a href="https://www.filmaffinity.com/us/movieimage.php?imageId=382685294">here</a>
+
+
+
+
+
 
 
 
