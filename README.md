@@ -157,6 +157,17 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 <img src="assets/images/readme/lighthouse-performance-mobile.png">
 </details>
 
+## Bugs
+
+- There was a common issue happend for beginners that tried to get a series of images container using DOM in gallery photos. But quertSelector has been used rather than querySelectorAll, which caused its' offsetWidth can't be obtained. Checked line by line to found it and fix it.
+
+## Unsolved Bugs
+
+- In music player part, music track time and total time are supposed to have. Tried to get the default music player attribute of track time and total time. And then connected it with designed music box to realize track time function. However, I was failed to get the attribute.
+
+- For progress bar, it should have fast-forward and fast-backward function. I don't have a clue to do it now. But I will definately continue to do it.
+
+
 
 
 
