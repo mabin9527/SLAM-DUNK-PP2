@@ -22,7 +22,7 @@ The purpose for doing this site was motivated by Slam-Dunk film coming back next
         - [User](#user)
 - [Testing](#testing)
 - [Credits](#credits)
-- [Acknowledgements] (#acknowledgements)
+- [Acknowledgements](#acknowledgements)
 
 # Wireframes
 
